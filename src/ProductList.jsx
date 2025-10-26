@@ -17,7 +17,10 @@ function ProductList({ onHomeClick }) {
         }));
     };
 
-
+    //no use
+    const calculateTotalQuantity = () => {
+    return CartItems ? CartItems.reduce((total, item) => total + item.quantity, 0) : 0;
+    };
 
 
     const plantsArray = [
